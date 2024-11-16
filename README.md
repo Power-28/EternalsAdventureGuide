@@ -1,0 +1,2 @@
+# EternalsAdventureGuide
+Eternal Travelers Documentation
