@@ -303,12 +303,6 @@ const rawCreatureData = `
 720300, Eternals Research Archive, 
 `;
 
-const currentDate = new Date().toLocaleDateString(); // Get the current date in a readable format
-
-// Set the text for the "Last Updated" paragraph
-const lastUpdatedElement = document.getElementById('last-updated');
-lastUpdatedElement.textContent = `Last Updated: ${currentDate}`; // Display the date below the title
-
 // Parsing the data into a structured format
 const creatures = rawCreatureData
     .trim() // Remove leading/trailing spaces
