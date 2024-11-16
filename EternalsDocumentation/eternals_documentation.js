@@ -332,8 +332,8 @@ function renderCreatures(data) {
 
         card.innerHTML = `
             <h2 title="${creature.name}">${creature.id} : ${creature.name}</h2>
-            ${abilitiesContainer}
             ${buttonHTML}
+            ${abilitiesContainer}
         `;
 
         // Append the creature card to the list
