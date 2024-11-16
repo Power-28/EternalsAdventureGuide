@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Dark background for the body */
+    color: #e0e0e0; /* Light gray text color for readability */
+}
+
+header {
+    background-color: #2e3b4e; /* Keep the same dark blue for header */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #444; /* Dark border for separation */
+}
+
+header input {
+    margin-top: 10px;
+    padding: 5px;
+    width: 100%;
+    max-width: 400px; /* Limit the width of the input field */
+    border: none;
+    border-radius: 5px;
+    background-color: #333; /* Dark background for the input */
+    color: white; /* White text in the input */
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    background-color: #121212; /* Dark background for the main area */
+}
+
+.card {
+    background: #2b2b2b; /* Slightly lighter dark background for cards */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow for depth */
+    margin: 10px;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+    overflow: hidden; /* Prevents overflow within the card */
+    border: 1px solid #444; /* Dark border for card */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7); /* Darker shadow on hover */
+}
+
+.card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #f4f4f4; /* Light color for headings */
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    padding: 5px; /* Add some padding for the expanded effect */
+    position: relative; /* Allows positioning of shadow on hover */
+    text-align: center; /* Center the heading text */
+}
+
+.card h2:hover {
+    transform: scale(1.2); /* Make the name bigger */
+    color: #ffffff; /* Change the text color to white */
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for better contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow to give a "pop" effect */
+    white-space: normal; /* Allow the name to wrap and show the full name */
+    overflow: visible; /* Allow the full text to be visible */
+    max-width: none; /* Remove any width constraint when hovering */
+}
+
+.card .abilities {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-right: 10px; /* Add some padding for scroll */
+    background-color: #2b2b2b; /* Ensure the background color matches the card */
+}
+
+.card .abilities a {
+    display: flex;
+    align-items: center; /* Align icon and name in one row */
+    margin: 5px 0;
+    text-decoration: none;
+    color: #9db6d1; /* Faded blue color for links */
+    font-weight: bold;
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Show "..." if text overflows */
+    max-width: 100%; /* Ensure link does not exceed card width */
+}
+
+.card .abilities a:hover {
+    color: #e2b97f; /* Goldish color on hover for emphasis */
+}
+
+.card .abilities .spell-icon {
+    display: inline-block;
+    width: 18px; /* Adjust size to be smaller */
+    height: 18px; /* Adjust size to be smaller */
+    margin-right: 5px;
+    vertical-align: middle; /* Aligns the icon with the text */
+}
+
+.card .open-spells-btn {
+    background-color: #4b6d94; /* Blue color for the button */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.card .open-spells-btn:hover {
+    background-color: #5a80a3; /* Lighter blue for hover effect */
+}
+
+.card .open-spells-btn:focus {
+    outline: none; /* Remove default focus outline */
+}
