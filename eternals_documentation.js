@@ -298,7 +298,7 @@ const rawCreatureData = `
 720295, Pulsing Leech, 
 720296, Volatile Tidesurger, 420170, 396400, 202062
 720297, Venomous Spiderling, 372408
-720298, Dambovita, 6016, 275986, 6016, 275986
+720298, Dambovita, 6016, 275986
 720299, Chronomancer's Hourglass, 
 720300, Eternals Research Archive, 
 `;
