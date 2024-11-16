@@ -303,6 +303,12 @@ const rawCreatureData = `
 720300, Eternals Research Archive, 
 `;
 
+const currentDate = new Date().toLocaleDateString(); // Get the current date in a readable format
+
+// Set the text for the "Last Updated" paragraph
+const lastUpdatedElement = document.getElementById('last-updated');
+lastUpdatedElement.textContent = `Last Updated: ${currentDate}`; // Display the date below the title
+
 // Parsing the data into a structured format
 const creatures = rawCreatureData
     .trim() // Remove leading/trailing spaces
@@ -382,6 +388,19 @@ searchInput.addEventListener('input', () => {
 renderCreatures(creatures);
 
 document.addEventListener("DOMContentLoaded", function() {
+
+    // Get the current date and subtract 7 days to get the date from one week ago
+    const currentDate = new Date();
+    currentDate.setDate(currentDate.getDate() - 7);
+
+    // Format the date to display with the month in English
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const formattedDate = currentDate.toLocaleDateString('en-US', options); // English month name format
+
+    // Set the text for the "Last Updated" paragraph
+    const lastUpdatedElement = document.getElementById('last-updated');
+    lastUpdatedElement.textContent = `Last Updated: ${formattedDate}`; // Display the date below the title
+
     // Add event listeners to all "Open All Spells" buttons
     const openSpellButtons = document.querySelectorAll('.open-spells-btn');
     
