@@ -383,9 +383,14 @@ renderCreatures(creatures);
 
 document.addEventListener("DOMContentLoaded", function() {
 
+    /*
     // Get the current date and subtract 7 days to get the date from one week ago
     const currentDate = new Date();
     currentDate.setDate(currentDate.getDate() - 7);
+    */
+
+    // Last Updated
+    const currentDate = new Date('2024-11-16'); // (YYYY-MM-DD)
 
     // Format the date to display with the month in English
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
