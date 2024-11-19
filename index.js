@@ -1,7 +1,7 @@
 // Data input (entry, name, abilitiesList format)
 const rawCreatureData = `
 720000, Archmage Khadgar, 221553, 194124
-720001, Lightlock, 387835
+720001, Lightlock, 292808
 720002, Unstable Crystal,
 720003, Ancient Keeper, 
 720004, Crystal Mother, 241962, 162475, 366091, 366097, 366092
@@ -115,7 +115,7 @@ const rawCreatureData = `
 720112, Seeping Fog, 198937, 205337, 205341, 205337, 198937
 720113, Sadana Bloodfury, 189637, 157589, 418561, 212258, 418564, 207166, 185982, 307805, 307806, 307821, 309498
 720114, Blazing Inferno, 408483, 408478, 418436
-720115, Forsaken Apothecary, 260304, 307977
+720115, Forsaken Apothecary, 260304, 307977, 411408
 720116, Portal Guardian, 204517
 720117, Shadowfel Warden, 
 720118, Void Tendril, 203140, 203313
@@ -135,7 +135,7 @@ const rawCreatureData = `
 720132, Verdant Ancient, 286510, 236450
 720133, Zandalari Thundercaller, 310835, 241290, 241263
 720134, Tormented Soul, 183347, 228254, 228255, 174559, 247678
-720135, Devout Priestess, 177287
+720135, Devout Priestess, 177287, 262962
 720136, Father Timothy, 179999, 174988, 228466, 222761, 406737, 314304, 314367, 314377, 179999
 720137, Spore Cloud, 227341, 168636, 412816
 720138, Rook Spiderling, 229904, 219861
@@ -199,7 +199,7 @@ const rawCreatureData = `
 720196, Shadowfel Amalgamation, 280248, 233516, 238005
 720197, Grand Apothecary Putress, 418425, 418426, 417774, 418540, 419223, 353573, 406771, 353588, 419229, 419232, 419231
 720198, Varimathras, 371983, 372082, 315011, 334051, 294454, 269781
-720199, Nathrezim Arcanist, 420806, 212625, 208626, 221696
+720199, Nathrezim Arcanist, 420806, 212625, 208626, 221696, 265427
 720200, Nurgash Muckformed, 366102, 366115, 366111, 306289, 366074, 386059, 334575, 398339, 314587, 403810, 403535
 720201, Chaotic Spatial Rift, 
 720202, Chaotic Spatial Rift, 
@@ -301,6 +301,7 @@ const rawCreatureData = `
 720298, Dambovita, 6016, 275986
 720299, Chronomancer's Hourglass, 
 720300, Eternals Research Archive, 
+720301, Gathering Blizzard, 289379, 289425
 `;
 
 // Parsing the data into a structured format
